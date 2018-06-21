@@ -8,16 +8,9 @@ const playkeys=(event)=>{
     audio.currentTime=0;
 
 	audio.play();
-	if(audio.currentTime =20)audio.pause()
 
     const key=document.querySelector(`.key[data-key="${event.keyCode}"]`);
 
-    function stopPlaying(event){
-
-		if(event.keyCode=32)
-
-		{return audio.pause()}
-	};
 	
   function removeTransition(event){
 
