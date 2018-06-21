@@ -12,6 +12,15 @@ const setDate=()=>{
 	const hourdeg=((hour/12)*360-90);
 	const mindeg=((minutes/60)*360-90);
 
+	if(seconds==0)
+	{
+      secrotate.style.transitionDuration = '0s';
+    } 
+    else
+    {
+     secrotate.style.transitionDuration = '0.05s';
+    }
+
 
 	secrotate.style.transform=`rotate(${secdeg}deg)`;
 	hourrotate.style.transform=`rotate(${hourdeg}deg)`;
