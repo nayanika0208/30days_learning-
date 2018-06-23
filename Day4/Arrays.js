@@ -103,4 +103,4 @@ const alpha=people.sort((a,b)=>
 		const [bfirst,blast]=b.split(",");
 		return ((alast>blast) ? 1 :-1 )
 	});
-console.table(alpha);
+console.table(alpha)
